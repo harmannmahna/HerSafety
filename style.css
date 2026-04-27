@@ -1,6 +1,10 @@
 /* HerSafety - Mobile-first styling */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
+.logo img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}
 :root {
   --bg-grad: linear-gradient(160deg, #fde7f3 0%, #f3e8ff 50%, #e0e7ff 100%);
   --primary: #d63384;
