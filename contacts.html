@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>HerSafety — Contacts</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="page-header">
+    <h1>Emergency Contacts</h1>
+    <p>People we'll alert when you press SOS</p>
+  </div>
+
+  <div class="card">
+    <form id="contact-form">
+      <label for="c-name">Name</label>
+      <input id="c-name" class="input" type="text" placeholder="Mom" required />
+      <label for="c-num">Phone Number</label>
+      <input id="c-num" class="input" type="tel" placeholder="+91 9XXXXXXXXX" required />
+      <div style="height: 14px"></div>
+      <button type="submit" class="btn btn-primary">+ Add Contact</button>
+    </form>
+  </div>
+
+  <div class="section-title">Saved Contacts</div>
+  <div id="contact-list"></div>
+</div>
+
+<nav class="bottom-nav">
+  <a class="nav-item" href="home.html"><span class="nav-icon">🏠</span>Home</a>
+  <a class="nav-item" href="map.html"><span class="nav-icon">🗺</span>Map</a>
+  <a class="nav-item active" href="contacts.html"><span class="nav-icon">📇</span>Contacts</a>
+  <a class="nav-item" href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+</nav>
+
+<script src="script.js"></script>
+<script>initContacts();</script>
+</body>
+</html>
