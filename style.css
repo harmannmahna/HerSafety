@@ -1,13 +1,18 @@
 /* HerSafety - Mobile-first styling */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-.page-bg {
+.login-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  max-width: 480px;
+  margin: 0 auto;
+
   background-image: url("HerSafety.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  width: 100%;
-  height: 100vh;   /* full screen height */
 }
 :root {
   --bg-grad: linear-gradient(160deg, #fde7f3 0%, #f3e8ff 50%, #e0e7ff 100%);
