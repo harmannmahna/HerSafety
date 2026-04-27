@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>HerSafety — Sign in</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="login-wrap">
+  <div class="brand">
+    <div class="logo">🛡️</div>
+    <h1>HerSafety</h1>
+    <p>Your personal safety companion</p>
+  </div>
+
+  <div class="card">
+    <form id="login-form">
+      <label for="name">Your Name</label>
+      <input id="name" class="input" type="text" placeholder="Jane Doe" required />
+      <label for="email">Email</label>
+      <input id="email" class="input" type="email" placeholder="jane@example.com" required />
+      <div style="height: 18px"></div>
+      <button type="submit" class="btn btn-primary">Continue →</button>
+    </form>
+  </div>
+
+  <p style="text-align:center; color:#6b7280; font-size:12px; margin-top:18px;">
+    By continuing you agree this is a demo safety prototype.
+  </p>
+</div>
+
+<script src="script.js"></script>
+<script>initLogin();</script>
+</body>
+</html>
