@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>HerSafety — Safety Map</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="page-header">
+    <h1>Safety Map</h1>
+    <p>Risk zones across Delhi</p>
+  </div>
+
+  <div class="map-container">
+    <iframe
+      title="Delhi map"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=77.10%2C28.50%2C77.35%2C28.75&layer=mapnik"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="zone-legend">
+    <div class="zone-chip safe">🟢 Safe</div>
+    <div class="zone-chip warn">🟡 Moderate</div>
+    <div class="zone-chip risk">🔴 High Risk</div>
+  </div>
+
+  <div id="zone-status" class="status-banner">Detecting your zone…</div>
+
+  <div class="card" style="margin-top:18px;">
+    <div style="font-weight:600; margin-bottom:6px;">About risk zones</div>
+    <div style="color:#6b7280; font-size:13px; line-height:1.6;">
+      Zones are simulated for this demo. A real implementation would pull from
+      crowd-sourced incident reports and police data to colour-code areas.
+    </div>
+  </div>
+</div>
+
+<nav class="bottom-nav">
+  <a class="nav-item" href="home.html"><span class="nav-icon">🏠</span>Home</a>
+  <a class="nav-item active" href="map.html"><span class="nav-icon">🗺</span>Map</a>
+  <a class="nav-item" href="contacts.html"><span class="nav-icon">📇</span>Contacts</a>
+  <a class="nav-item" href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+</nav>
+
+<script src="script.js"></script>
+<script>initMap();</script>
+</body>
+</html>
