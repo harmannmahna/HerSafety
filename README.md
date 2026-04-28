@@ -161,7 +161,7 @@ HerSafety/
 Simple login system with name and email authentication stored in localStorage.
 
 <div align="center">
-  <img src="loginher.png" width="45%">
+  <img src="loginher.png" width="550">
 </div>
 
 ---
@@ -170,7 +170,7 @@ Simple login system with name and email authentication stored in localStorage.
 Main dashboard with greeting, location tracking, and emergency SOS system.
 
 <div align="center">
-  <img src="homepage.png" width="45%">
+  <img src="homepage.png" width="550">
 </div>
 
 ---
@@ -179,7 +179,7 @@ Main dashboard with greeting, location tracking, and emergency SOS system.
 Full-screen SOS activation with simulated emergency response actions.
 
 <div align="center">
-  <img src="alert.png" width="45%">
+  <img src="alert.png" width="550">
 </div>
 
 ---
@@ -187,21 +187,21 @@ Full-screen SOS activation with simulated emergency response actions.
 Smart escape call shows incoming call and you can decide the time duration of it and Ai Fake calls acts as an actual call .
 #### Smart escape call 
 <div align="center">
-  <img src="smartescapecall.png" width="45%">
+  <img src="smartescapecall.png" width="550">
 </div>
 
 #### Ai call 
 <div align="center">
-  <img src="aifakecall.png" width="45%">
-  <img src="hindifakecall.png" width="45%">
- <img src="callinenglish.png" width="45%">
+  <img src="aifakecall.png" width="500">
+  <img src="hindifakecall.png" width="500">
+ <img src="callinenglish.png" width="500">
 </div>
 
 ### 5) Map Page
 Displays safety zones (Safe / Medium / High risk areas).
 
 <div align="center">
-  <img src="safetymap.png" width="45%">
+  <img src="safetymap.png" width="550">
 </div>
 
 ---
@@ -210,7 +210,7 @@ Displays safety zones (Safe / Medium / High risk areas).
 Manage emergency contacts stored in localStorage.
 
 <div align="center">
-  <img src="emergencycontacts.png" width="45%">
+  <img src="emergencycontacts.png" width="550">
 </div>
 
 ---
@@ -219,7 +219,7 @@ Manage emergency contacts stored in localStorage.
 Displays user details with logout functionality.
 
 <div align="center">
-  <img src="profile.png" width="45%">
+  <img src="profile.png" width="550">
 </div>
 ---
 
