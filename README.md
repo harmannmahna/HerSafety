@@ -182,5 +182,5 @@ Built as a frontend project focused on:
 
 Inspired by real-world safety applications, built to explore how frontend technologies can simulate emergency response systems.
 
-# 📂 Project Structure
+
 
