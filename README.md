@@ -6,7 +6,10 @@ It allows users to log in, track location, manage emergency contacts, and trigge
 Built using **HTML, CSS, and JavaScript (no frameworks)** with a focus on **UI/UX design and browser API integration**.
 
 ---
+##  Live Demo
 
+ https://harmannmahna.github.io/HerSafety/
+---
 #  Features
 
 ##  Authentication System (Frontend Only)
@@ -44,7 +47,14 @@ On activation:
 - ### Smart Escape Call simulation:
   - Plays pre-recorded audio (Mom/Friend)
   - Timer options: **10s / 15s / 20s**
+###  Smart Fake Call (AI Voice Simulation)
 
+- Simulates an incoming call during emergency situations
+- Plays pre-recorded AI-generated voice message:
+  - “Hi, I will reach your location soon” (English)
+  - Same message in Hindi for multilingual support
+- Designed to give a realistic emergency reassurance experience
+- Currently integrated inside the Home page only under Quick Actions
 ---
 
 ##  Map Module
@@ -114,24 +124,20 @@ On activation:
 # 📂 Project Structure
 
 
+```
 HerSafety/
 │
-├── index.html # Login Page
-├── home.html # Home Dashboard
-├── map.html # Map Page
-├── contacts.html # Contacts Page
-├── profile.html # Profile Page
+├── index.html          # Login Page
+├── home.html           # Home Dashboard (SOS + actions)
+├── map.html            # Safety Map Page
+├── contacts.html       # Emergency Contacts Page
+├── profile.html        # User Profile Page
 │
-├── style.css # Global Styles
-├── script.js # JavaScript Logic
+├── style.css           # Global Stylesheet
+├── script.js           # Main JavaScript Logic
 │
-└── assets/
-├── login.png
-├── home.png
-├── emergency.png
-├── map.png
-├── contacts.png
-└── profile.png
+└── HerSafety.png       # Logo 
+```
 
 
 
@@ -165,7 +171,8 @@ HerSafety/
 - Push notifications
 - Dark mode support
 - Cloud-based contact storage
-
+-  Expand Fake Call feature with multiple languages support
+    Future updates will include multiple global languages for better accessibility and realism
 ---
 
 #  Author - Harmann Kaur
