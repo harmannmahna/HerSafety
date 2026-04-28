@@ -155,13 +155,59 @@ HerSafety/
 
 
 
-- Login Page  
-- Home Page (SOS system)  
-- Emergency Alert Screen  
-- Map Page  
-- Contacts Page  
-- Profile Page  
+## 📸 Screenshots
 
+### 1) Login Page
+Simple login system with name and email authentication stored in localStorage.
+
+<div align="center">
+  <img src="assets/login.png" width="45%">
+</div>
+
+---
+
+### 2) Home Page (SOS Dashboard)
+Main dashboard with greeting, location tracking, and emergency SOS system.
+
+<div align="center">
+  <img src="assets/home.png" width="45%">
+</div>
+
+---
+
+### 3) Emergency Alert System
+Full-screen SOS activation with simulated emergency response actions.
+
+<div align="center">
+  <img src="assets/emergency.png" width="45%">
+</div>
+
+---
+
+### 4) Map Page
+Displays safety zones (Safe / Medium / High risk areas).
+
+<div align="center">
+  <img src="assets/map.png" width="45%">
+</div>
+
+---
+
+### 5) Contacts Page
+Manage emergency contacts stored in localStorage.
+
+<div align="center">
+  <img src="assets/contacts.png" width="45%">
+</div>
+
+---
+
+### 6) Profile Page
+Displays user details with logout functionality.
+
+<div align="center">
+  <img src="assets/profile.png" width="45%">
+</div>
 ---
 
 #  Future Improvements
@@ -175,7 +221,8 @@ HerSafety/
     Future updates will include multiple global languages for better accessibility and realism
 ---
 
-#  Author - Harmann Kaur
+#  Author 
+## Harmann Kaur
 
 Built as a frontend project focused on:
 
