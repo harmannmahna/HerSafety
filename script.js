@@ -36,17 +36,37 @@ function initLogin() {
     window.location.href = "home.html";
     return;
   }
+
   const form = document.getElementById("login-form");
+
+  if (!form) {
+    console.error("Login form not found");
+    return;
+  }
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
+
+    const nameEl = document.getElementById("name");
+    const emailEl = document.getElementById("email");
+
+    if (!nameEl || !emailEl) {
+      console.error("Input fields missing");
+      return;
+    }
+
+    const name = nameEl.value.trim();
+    const email = emailEl.value.trim();
+
     if (!name || !email) return;
+
     Auth.save({ name, email });
+
+    console.log("Login success:", Auth.user);
+
     window.location.href = "home.html";
   });
 }
-
 // ---------- Geolocation ----------
 function getLocationText(targetEl) {
   if (!navigator.geolocation) {
