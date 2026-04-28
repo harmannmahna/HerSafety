@@ -161,7 +161,7 @@ HerSafety/
 Simple login system with name and email authentication stored in localStorage.
 
 <div align="center">
-  <img src="assets/login.png" width="45%">
+  <img src="assets/loginher.png" width="45%">
 </div>
 
 ---
@@ -170,7 +170,7 @@ Simple login system with name and email authentication stored in localStorage.
 Main dashboard with greeting, location tracking, and emergency SOS system.
 
 <div align="center">
-  <img src="assets/home.png" width="45%">
+  <img src="assets/homepage.png" width="45%">
 </div>
 
 ---
@@ -179,25 +179,37 @@ Main dashboard with greeting, location tracking, and emergency SOS system.
 Full-screen SOS activation with simulated emergency response actions.
 
 <div align="center">
-  <img src="assets/emergency.png" width="45%">
+  <img src="assets/alert.png" width="45%">
 </div>
 
 ---
+### 4) Smart escape call and AI Fake Call 
+Smart escape call shows incoming call and you can decide the time duration of it and Ai Fake calls acts as an actual call .
+#### smart escape call 
+<div align="center">
+  <img src="assets/smartescapecall.png" width="45%">
+</div>
 
-### 4) Map Page
+#### ai call in hindi and english 
+<div align="center">
+  <img src="aifakecall.png" width="45%">
+  <img src="hindifakecall.png" width="45%">
+</div>
+
+### 5) Map Page
 Displays safety zones (Safe / Medium / High risk areas).
 
 <div align="center">
-  <img src="assets/map.png" width="45%">
+  <img src="assets/safetymap.png" width="45%">
 </div>
 
 ---
 
-### 5) Contacts Page
+### 6) Contacts Page
 Manage emergency contacts stored in localStorage.
 
 <div align="center">
-  <img src="assets/contacts.png" width="45%">
+  <img src="assets/emergencycontacts.png" width="45%">
 </div>
 
 ---
