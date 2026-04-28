@@ -1,6 +1,5 @@
 /* HerSafety - Mobile-first styling */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
 :root {
   --bg-grad: linear-gradient(160deg, #fde7f3 0%, #f3e8ff 50%, #e0e7ff 100%);
   --primary: #d63384;
@@ -15,7 +14,6 @@
   --shadow: 0 6px 20px rgba(124, 58, 237, 0.12);
   --radius: 18px;
 }
-
 html, body {
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -24,7 +22,6 @@ html, body {
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
-
 .app {
   max-width: 480px;
   margin: 0 auto;
@@ -32,9 +29,7 @@ html, body {
   padding: 24px 20px 100px;
   position: relative;
 }
-
 .app.no-nav { padding-bottom: 24px; }
-
 /* Headers */
 .page-header {
   margin-bottom: 20px;
@@ -45,7 +40,6 @@ html, body {
   letter-spacing: -0.5px;
 }
 .page-header p { color: var(--muted); margin-top: 4px; font-size: 14px; }
-
 /* Cards */
 .card {
   background: var(--card);
@@ -54,7 +48,6 @@ html, body {
   box-shadow: var(--shadow);
   margin-bottom: 16px;
 }
-
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -73,7 +66,6 @@ html, body {
 }
 .btn:active { transform: scale(0.97); }
 .btn:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.1); }
-
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: white;
@@ -91,7 +83,6 @@ html, body {
   color: var(--primary);
   border: 1.5px solid var(--primary);
 }
-
 /* Inputs */
 .input {
   width: 100%;
@@ -116,10 +107,8 @@ label {
   margin-bottom: 6px;
   margin-top: 12px;
 }
-
 /* Login */
 .login-wrap {
-  .login-wrap {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -127,42 +116,28 @@ label {
   padding: 24px;
   max-width: 480px;
   margin: 0 auto;
-  position: relative;
-  overflow: hidden;
 }
-
-/* blurred background logo */
-.login-wrap::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image: url("HerSafety.png"); /* adjust path if needed */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 220px;
-
-  opacity: 0.08;
-  filter: blur(2px);
-  transform: scale(1.2);
-
-  z-index: 0;
-}
-
-/* keep content above background */
-.login-wrap > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* cleaner note styling */
-.note {
+.brand {
   text-align: center;
-  color: #6b7280;
-  font-size: 12px;
-  margin-top: 18px;
+  margin-bottom: 32px;
 }
-
+.brand .logo {
+  width: 80px; height: 80px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 38px;
+  box-shadow: 0 10px 30px rgba(214, 51, 132, 0.35);
+}
+.brand h1 {
+  font-size: 32px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.brand p { color: var(--muted); margin-top: 6px; font-size: 14px; }
 /* Greeting */
 .greeting {
   margin-bottom: 18px;
@@ -172,7 +147,6 @@ label {
   display: flex; align-items: center; gap: 6px;
   color: var(--muted); font-size: 13px; margin-top: 6px;
 }
-
 /* SOS Button */
 .sos-wrap {
   display: flex; flex-direction: column; align-items: center;
@@ -195,13 +169,11 @@ label {
 }
 .sos-btn:active { transform: scale(0.95); }
 .sos-hint { color: var(--muted); margin-top: 14px; font-size: 13px; text-align: center; }
-
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(214, 0, 74, 0.5), 0 15px 40px rgba(214, 0, 74, 0.4); }
   70% { box-shadow: 0 0 0 25px rgba(214, 0, 74, 0), 0 15px 40px rgba(214, 0, 74, 0.4); }
   100% { box-shadow: 0 0 0 0 rgba(214, 0, 74, 0), 0 15px 40px rgba(214, 0, 74, 0.4); }
 }
-
 /* Quick actions grid */
 .section-title {
   font-size: 16px; font-weight: 700; margin: 20px 0 12px;
@@ -225,7 +197,6 @@ label {
 .action-card:active { transform: scale(0.96); }
 .action-card .icon { font-size: 28px; margin-bottom: 8px; }
 .action-card .name { font-size: 13px; font-weight: 600; color: var(--text); }
-
 /* Bottom navigation */
 .bottom-nav {
   position: fixed;
@@ -252,7 +223,6 @@ label {
 }
 .nav-item .nav-icon { font-size: 22px; }
 .nav-item.active { color: var(--primary); }
-
 /* Modal overlay */
 .overlay {
   position: fixed; inset: 0;
@@ -288,13 +258,11 @@ label {
   content: "✓ "; font-weight: bold; margin-right: 6px;
 }
 .overlay .btn { max-width: 280px; }
-
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes pulseWhite {
   0%,100% { transform: scale(1); }
   50% { transform: scale(1.08); }
 }
-
 /* Map page */
 .map-container {
   position: relative;
@@ -326,7 +294,6 @@ label {
 .zone-chip.safe { background: var(--safe); }
 .zone-chip.warn { background: var(--warn); }
 .zone-chip.risk { background: var(--danger); }
-
 .status-banner {
   margin-top: 16px;
   padding: 16px;
@@ -338,7 +305,6 @@ label {
 .status-banner.safe { background: var(--safe); }
 .status-banner.warn { background: var(--warn); }
 .status-banner.risk { background: var(--danger); }
-
 /* Contacts */
 .contact-item {
   display: flex;
@@ -376,7 +342,6 @@ label {
   padding: 40px 20px;
   font-size: 14px;
 }
-
 /* Profile */
 .profile-head {
   text-align: center;
@@ -395,14 +360,12 @@ label {
 }
 .profile-head .name { font-size: 22px; font-weight: 700; }
 .profile-head .email { color: var(--muted); font-size: 14px; margin-top: 4px; }
-
 /* Voice listening indicator */
 .listening {
   background: var(--accent) !important;
   color: white !important;
   animation: pulse 1.5s infinite;
 }
-
 /* Escape call modal */
 .choices {
   display: flex; gap: 8px; margin-top: 12px;
@@ -419,7 +382,6 @@ label {
   font-family: inherit;
 }
 .choices button:hover { background: var(--primary); color: white; }
-
 .toast {
   position: fixed;
   bottom: 90px; left: 50%;
@@ -437,7 +399,6 @@ label {
   text-align: center;
 }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(-6px); }
-
 video.preview {
   width: 100%;
   border-radius: 14px;
