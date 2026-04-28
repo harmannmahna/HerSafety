@@ -1,137 +1,186 @@
-HerSafety
+#  HerSafety — Her Safety  (Frontend Project)
 
-A responsive frontend web application designed as a mobile-style personal safety system. Built using HTML, CSS, and JavaScript without any frameworks. The project simulates emergency safety features with a focus on UI/UX design and browser API integration.
+**HerSafety** is a mobile-style frontend web application designed to simulate a personal safety system.  
+It allows users to log in, track location, manage emergency contacts, and trigger a simulated SOS system using browser APIs.
 
-Live Demo
+Built using **HTML, CSS, and JavaScript (no frameworks)** with a focus on **UI/UX design and browser API integration**.
 
-Add your deployed GitHub Pages link here:
+---
 
-https://your-username.github.io/HerSafety/
-Screenshots
+#  Features
 
-Add your screenshots in a folder named assets/ in your repository.
+##  Authentication System (Frontend Only)
 
-Login Page
+- Simple login using **Name and Email**
+- Data stored in `localStorage`
+- Auto redirect to Home page after login
+- Persistent session until logout
 
-Displays a simple authentication interface with name and email input stored in localStorage.
+---
 
-assets/login.png
-Home Page
+##  Home Dashboard
 
-Main dashboard with greeting, location display, and SOS emergency button.
+- Personalized greeting: **Hello, [Name]**
+- Live location using **Geolocation API**
+- Central animated **SOS button**
 
-assets/home.png
-Emergency Call Interface
+###  SOS System (Simulation)
 
-Full-screen SOS alert simulation showing emergency activation workflow.
+On activation:
 
-assets/emergency.png
-Map Page
+- Full-screen emergency alert overlay
+- Simulated actions:
+  - Location sharing with emergency contacts
+  - Emergency call to **112 (simulation only)**
+  - Audio recording using **MediaRecorder API (if supported)**
+- Option to cancel alert
 
-Displays safety zones with simulated risk levels (Safe, Moderate, High Risk).
+---
 
-assets/map.png
-Contacts Page
+##  Quick Actions
 
-Allows users to add, view, and delete emergency contacts stored locally.
+- Start audio recording
+- Start video recording (MediaDevices API if supported)
+- Smart Escape Call simulation:
+  - Plays pre-recorded audio (Mom/Friend)
+  - Timer options: **10s / 15s / 20s**
 
-assets/contacts.png
-Profile Page
+---
 
-Displays user information with logout functionality.
+##  Map Module
 
-assets/profile.png
-Features
-Authentication (Frontend Simulation)
-Login using name and email
-Data stored using localStorage
-Automatic redirection to home page after login
-Home Dashboard
-Personalized greeting based on user input
-Current location using Geolocation API
-Central SOS button for emergency simulation
-SOS Functionality
-Full-screen emergency alert overlay
-Simulated actions:
-Location sharing
-Emergency call initiation (112 simulation)
-Audio recording using MediaRecorder API (if supported)
-Cancel emergency option
-Quick Actions
-Audio recording feature
-Video recording using MediaDevices API (if supported)
-Smart escape call simulation with timed playback options
-Map Module
-Embedded or placeholder map of Delhi
-Risk zones displayed as:
-Safe
-Moderate
-High Risk
-Dynamic status message based on zone
-Contacts Management
-Add emergency contacts (name and phone number)
-Store data in localStorage
-View and delete saved contacts
-Profile Section
-Displays stored user details
-Logout functionality (clears localStorage)
-Voice Activation (Experimental)
-Uses Web Speech API (if available in browser)
-Detects keyword “help me”
-Automatically triggers SOS alert simulation
-UI/UX Design
-Mobile-first responsive layout
-Clean card-based design
-Rounded buttons and containers
-Soft gradient styling
-Fixed bottom navigation bar:
-Home
-Map
-Contacts
-Profile
-Tech Stack
-HTML5
-CSS3 (Flexbox, Grid, Animations)
-Vanilla JavaScript
-Browser APIs:
-Geolocation API
-Web Speech API
-MediaDevices API
-MediaRecorder API
-LocalStorage API
-Project Structure
+- Embedded or placeholder map (Delhi region)
+- Safety zones:
+  - 🔴 High Risk
+  - 🟡 Medium Risk
+  - 🟢 Safe Area
+- Dynamic safety status message based on zone
+
+---
+
+##  Emergency Contacts
+
+- Add contacts (Name + Phone Number)
+- Stored in `localStorage`
+- View saved contacts list
+- Delete contacts option
+
+---
+
+##  Profile Page
+
+- Displays user details (Name, Email)
+- Logout functionality (clears `localStorage`)
+
+---
+
+##  Voice Activation (Experimental)
+
+- Uses **Web Speech API (if supported)**
+- Detects keyword: **"help me"**
+- Automatically triggers SOS system
+
+---
+
+#  UI/UX Design
+
+- Mobile-first responsive layout
+- Clean card-based interface
+- Soft gradient color theme
+- Rounded buttons and components
+- Bottom navigation bar:
+  - Home
+  - Map
+  - Contacts
+  - Profile
+- Smooth animations and transitions
+
+---
+
+#  Tech Stack
+
+- HTML5
+- CSS3 (Flexbox, Grid, Animations)
+- Vanilla JavaScript
+
+### Browser APIs Used:
+- Geolocation API
+- Web Speech API
+- MediaDevices API
+- MediaRecorder API
+- LocalStorage API
+
+---
+# 📂 Project Structure
+
+
 HerSafety/
 │
-├── index.html        # Login Page
-├── home.html         # Home Dashboard
-├── map.html          # Map Page
-├── contacts.html     # Contacts Page
-├── profile.html      # Profile Page
+├── index.html # Login Page
+├── home.html # Home Dashboard
+├── map.html # Map Page
+├── contacts.html # Contacts Page
+├── profile.html # Profile Page
 │
-├── style.css         # Global Styles
-├── script.js         # JavaScript Logic
+├── style.css # Global Styles
+├── script.js # JavaScript Logic
 │
 └── assets/
-    ├── login.png
-    ├── home.png
-    ├── emergency.png
-    ├── map.png
-    ├── contacts.png
-    └── profile.png
-Important Notes
-All emergency features are simulated for demonstration purposes only.
-No real emergency services are contacted.
-The project is intended for educational and UI/UX learning purposes.
-Future Improvements
-Backend integration for authentication
-Real-time location sharing
-Push notification support
-Dark mode implementation
-Cloud storage for contacts
-Author
+├── login.png
+├── home.png
+├── emergency.png
+├── map.png
+├── contacts.png
+└── profile.png
 
-This project was built as a frontend learning exercise focusing on:
 
-UI/UX design principles
-Browser API integration
-Mobile-first responsive development
+
+---
+
+# ⚠️ Important Notes
+
+- All emergency features are **simulated only**
+- No real calls or emergency services are triggered
+- Built for **learning and UI/UX development**
+
+---
+
+# Screenshots
+
+
+
+- Login Page  
+- Home Page (SOS system)  
+- Emergency Alert Screen  
+- Map Page  
+- Contacts Page  
+- Profile Page  
+
+---
+
+#  Future Improvements
+
+- Backend authentication system
+- Real-time location sharing
+- Push notifications
+- Dark mode support
+- Cloud-based contact storage
+
+---
+
+#  Author - Harmann Kaur
+
+Built as a frontend project focused on:
+
+- UI/UX design
+- Browser API usage
+- Mobile-first development
+
+----
+
+#  Inspiration
+
+Inspired by real-world safety applications, built to explore how frontend technologies can simulate emergency response systems.
+
+# 📂 Project Structure
+
