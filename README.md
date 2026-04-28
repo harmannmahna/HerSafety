@@ -41,7 +41,7 @@ On activation:
 
 - Start audio recording
 - Start video recording (MediaDevices API if supported)
-- Smart Escape Call simulation:
+- ### Smart Escape Call simulation:
   - Plays pre-recorded audio (Mom/Friend)
   - Timer options: **10s / 15s / 20s**
 
@@ -49,7 +49,7 @@ On activation:
 
 ##  Map Module
 
-- Embedded or placeholder map (Delhi region)
+- ### Embedded or placeholder map (Delhi region)
 - Safety zones:
   - 🔴 High Risk
   - 🟡 Medium Risk
