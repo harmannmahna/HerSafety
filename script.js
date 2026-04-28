@@ -363,30 +363,49 @@ function toggleVoiceListen(btn) {
 // ---------- Home page init ----------
 function initHome() {
   requireAuth();
-  document.getElementById("greet-name").textContent = Auth.user.name;
-  getLocationText(document.getElementById("greet-loc"));
 
-  document.getElementById("sos-btn").addEventListener("click", triggerSOS);
-  document.getElementById("cancel-sos").addEventListener("click", cancelSOS);
-  document.getElementById("audio-btn").addEventListener("click", (e) => toggleAudioRecording(e.currentTarget));
-  document.getElementById("video-btn").addEventListener("click", (e) => toggleVideoRecording(e.currentTarget));
-  document.getElementById("escape-btn").addEventListener("click", showEscapeChoices);
-  document.getElementById("voice-btn").addEventListener("click", (e) => toggleVoiceListen(e.currentTarget));
+  const nameEl = document.getElementById("greet-name");
+  const locEl = document.getElementById("greet-loc");
+
+  if (nameEl) nameEl.textContent = Auth.user.name;
+  if (locEl) getLocationText(locEl);
+
+  const sosBtn = document.getElementById("sos-btn");
+  const cancelBtn = document.getElementById("cancel-sos");
+
+  if (sosBtn) sosBtn.addEventListener("click", triggerSOS);
+  if (cancelBtn) cancelBtn.addEventListener("click", cancelSOS);
+
+  const audioBtn = document.getElementById("audio-btn");
+  const videoBtn = document.getElementById("video-btn");
+
+  if (audioBtn) audioBtn.addEventListener("click", (e) => toggleAudioRecording(e.currentTarget));
+  if (videoBtn) videoBtn.addEventListener("click", (e) => toggleVideoRecording(e.currentTarget));
+
+  const escapeBtn = document.getElementById("escape-btn");
+  const voiceBtn = document.getElementById("voice-btn");
+
+  if (escapeBtn) escapeBtn.addEventListener("click", showEscapeChoices);
+  if (voiceBtn) voiceBtn.addEventListener("click", (e) => toggleVoiceListen(e.currentTarget));
 
   document.querySelectorAll("[data-escape]").forEach(b => {
     b.addEventListener("click", () => escapeCall(parseInt(b.dataset.escape, 10)));
   });
 
-  document.getElementById("ai-call-btn").addEventListener("click", showAiCallChoices);
+  const aiBtn = document.getElementById("ai-call-btn");
+  if (aiBtn) aiBtn.addEventListener("click", showAiCallChoices);
+
   document.querySelectorAll("[data-ai-lang]").forEach(b => {
     b.addEventListener("click", () => startAiCall(b.dataset.aiLang));
   });
-  document.getElementById("end-ai-call").addEventListener("click", endAiCall);
 
-  // Pre-warm voice list (some browsers load async)
-  if ("speechSynthesis" in window) { try { window.speechSynthesis.getVoices(); } catch {} }
+  const endCallBtn = document.getElementById("end-ai-call");
+  if (endCallBtn) endCallBtn.addEventListener("click", endAiCall);
+
+  if ("speechSynthesis" in window) {
+    try { window.speechSynthesis.getVoices(); } catch {}
+  }
 }
-
 // ---------- Map page init ----------
 function initMap() {
   requireAuth();
